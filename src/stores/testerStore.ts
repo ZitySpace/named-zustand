@@ -20,14 +20,14 @@ const createStoreFromData = (data: StoreStateData | null) =>
     setText: (t: string) => set({ text: t }),
   }));
 
-const storeStateDefault = createStoreFromData(storeStateDataDefault);
+// const storeStateDefault = createStoreFromData(storeStateDataDefault);
 
-const StoreContext = createContext<StoreApi<StoreState>>(storeStateDefault);
+// const StoreContext = createContext<StoreApi<StoreState>>(storeStateDefault);
 
 const useStore = newUseStore<StoreState>(createStoreFromData);
 
 export {
-  StoreContext as TesterStoreContext,
+  // StoreContext as TesterStoreContext,
   StoreState as TesterStoreState,
   StoreStateData as TesterStoreStateData,
   useStore as useTesterStore,
