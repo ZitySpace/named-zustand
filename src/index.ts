@@ -1,2 +1,3 @@
-import './styles/tailwind.css';
-export * from './components';
+const a: number = 3;
+
+export { a };

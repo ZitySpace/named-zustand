@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
@@ -9,17 +9,19 @@
         "jsx": "react",
         "module": "ESNext",
         "declaration": true,
-        "declarationDir": "types",
+        "declarationDir": ".",
         "sourceMap": true,
+        "inlineSources": true,
         "outDir": "dist",
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
         "emitDeclarationOnly": true,
+        "suppressImplicitAnyIndexErrors": true
     },
+    "include": ["src"],
     "exclude": [
         "node_modules",
         "dist",
-        "src/**/*.stories.tsx",
-        "src/**/*.test.tsx"
+        "examples",
     ]
 }
