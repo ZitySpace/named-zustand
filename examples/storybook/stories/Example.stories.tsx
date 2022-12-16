@@ -1,18 +1,6 @@
-# named-zustand
-
-[![CI](https://img.shields.io/github/workflow/status/zityspace/named-zustand/Release)](https://github.com/zityspace/named-zustand/actions?query=workflow%3ARelease)
-[![npm](https://img.shields.io/npm/v/named-zustand)](https://www.npmjs.com/package/named-zustand)
-
-## Install
-
-```bash
-npm install named-zustand
-```
-
-## Usage
-
-```tsx
 import React from 'react';
+
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { createNamed } from 'named-zustand';
 import shallow from 'zustand/shallow';
 
@@ -40,7 +28,7 @@ const Bear = ({ name }: { name: string }) => {
   );
 };
 
-const GroupOfBear = () => (
+const Example = () => (
   <div>
     <Bear name='foo' />
     <Bear name='bar' />
@@ -48,14 +36,13 @@ const GroupOfBear = () => (
     <Bear name='bar' />
   </div>
 );
-```
 
-## Examples
+export default {
+  title: 'Example/Named-Zustand',
+  component: Example,
+} as ComponentMeta<typeof Example>;
 
-The examples folder contains a story to show the usage.
+const Template: ComponentStory<typeof Example> = (args) => <Example />;
 
-```bash
-cd examples && yarn install && yarn storybook
-```
-
-and open [http://localhost:6006](http://localhost:6006) in your web browser.
+export const Story = Template.bind({});
+Story.args = {};
