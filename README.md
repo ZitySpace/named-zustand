@@ -3,6 +3,8 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/zityspace/named-zustand/release.yml?branch=master)](https://github.com/zityspace/named-zustand/actions?query=workflow%3ARelease)
 [![npm](https://img.shields.io/npm/v/named-zustand)](https://www.npmjs.com/package/named-zustand)
 
+`named-zustand` helps creating multiple store instances of same `stateCreator` using different names, and components using the same store name share its state.
+
 ## Install
 
 ```bash
