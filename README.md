@@ -57,7 +57,7 @@ const GroupOfBear = () => (
 The examples folder contains a story to show the usage.
 
 ```bash
-cd examples && yarn install && yarn storybook
+cd examples/storybook && yarn install && yarn storybook
 ```
 
 and open [http://localhost:6006](http://localhost:6006) in your web browser.
